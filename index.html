@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Professional Email & Domain Research Validator for Business, Marketing & Website Development. Detect placeholder emails, validate formats, and get marketing insights.">
+  <meta name="keywords" content="email validation, domain research, marketing tools, javascript, business email checker, placeholder detector">
+  <title>Email Domain Validator | Business & Marketing Tool</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">✉</span>
+        <h1>Email Domain Validator</h1>
+      </div>
+      <p class="tagline">Business • Marketing • Website Development Tool</p>
+    </header>
+
+    <!-- Main Tool Card -->
+    <main class="card">
+      <h2>Research & Validate Any Email</h2>
+      <p class="subtitle">Instantly check format, detect placeholder domains used in templates, and get marketing insights. Perfect for lead lists, CRM imports, and form testing.</p>
+
+      <div class="input-group">
+        <label for="emailInput">Email Address</label>
+        <div class="input-wrapper">
+          <input 
+            type="email" 
+            id="emailInput" 
+            placeholder="e.g. caneiro@interestingsite.com" 
+            autocomplete="off"
+            spellcheck="false"
+          >
+          <button id="validateBtn" class="btn-primary">Validate & Research</button>
+        </div>
+      </div>
+
+      <!-- Results Section -->
+      <div id="results" class="results hidden">
+        <div class="result-header">
+          <h3>Research Results</h3>
+          <span id="statusBadge" class="badge"></span>
+        </div>
+        
+        <div class="result-grid">
+          <div class="result-item">
+            <span class="label">Format Valid</span>
+            <span id="formatResult" class="value"></span>
+          </div>
+          <div class="result-item">
+            <span class="label">Placeholder Domain</span>
+            <span id="placeholderResult" class="value"></span>
+          </div>
+          <div class="result-item">
+            <span class="label">Domain</span>
+            <span id="domainResult" class="value"></span>
+          </div>
+          <div class="result-item">
+            <span class="label">Risk Level</span>
+            <span id="riskResult" class="value"></span>
+          </div>
+        </div>
+
+        <div id="insightBox" class="insight-box">
+          <h4>Marketing & Business Insight</h4>
+          <p id="insightText"></p>
+        </div>
+
+        <div id="jsCodeBox" class="code-box">
+          <h4>JavaScript Validation Logic (Reusable)</h4>
+          <pre><code id="jsSnippet"></code></pre>
+        </div>
+      </div>
+    </main>
+
+    <!-- Features -->
+    <section class="features">
+      <h2>Built for Professionals</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Marketing Ready</h3>
+          <p>Filter placeholder emails from lead lists before campaigns or CRM imports.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💻</div>
+          <h3>Website Development</h3>
+          <p>Copy-paste the documented JavaScript into your forms, landing pages, or apps.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔍</div>
+          <h3>Domain Research</h3>
+          <p>Instantly identify common educational and template domains used in samples.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Original Research Note -->
+    <section class="research-note">
+      <h3>About the Original Research</h3>
+      <p>This tool was inspired by research into the sample email <strong>caneiro@interestingsite.com</strong>. That address (and the domain interestingsite.com) is a well-known placeholder used in educational invoices, Microsoft-style templates, résumés, and training documents. The domain itself is currently parked and listed for sale.</p>
+      <p>Use this tool to keep your business data clean and your marketing lists accurate.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Built with clean, documented JavaScript • Open Source on GitHub</p>
+      <p><a href="https://github.com/pointgoddesscc-sketch/email-domain-validator" target="_blank" rel="noopener">View Source Code</a></p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

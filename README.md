@@ -147,6 +147,16 @@ function EmailChecker() {
 
 ---
 
+## Related: Website Security & Brand Protection Playbook
+
+Full documentation on owned domains, HTTPS, HSTS preload, mixed content auditing, and maintainable JavaScript security configuration:
+
+**→ [docs/website-security-playbook.md](docs/website-security-playbook.md)**
+
+This playbook complements the Email Domain Validator by covering the infrastructure layer that keeps brand domains trustworthy and phishing-resistant.
+
+---
+
 ## Known Placeholder Domains
 
 The tool currently detects:
@@ -171,6 +181,8 @@ email-domain-validator/
 ├── index.html          # Main UI
 ├── styles.css          # Professional business styling
 ├── script.js           # Fully documented validation logic
+├── docs/
+│   └── website-security-playbook.md  # Security & brand protection guide
 └── README.md           # This documentation
 ```
 
